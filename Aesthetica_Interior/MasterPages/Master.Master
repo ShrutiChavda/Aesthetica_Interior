@@ -1,0 +1,36 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Master.master.cs" Inherits="Aesthetica_Interior.MasterPages.Master" %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head runat="server">
+    <title>Aesthetica - Interior Design</title>
+    <link rel="stylesheet" href="../Assets/css/style.css" />
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+</head>
+<body>
+    <form runat="server">
+        <!-- Header -->
+        <div class="navbar">
+            <div class="logo">
+                <img src="../Assets/images/logo.png" alt="Logo" />
+                <span>Aesthetica</span>
+            </div>
+            <div class="nav-links">
+                <a href="../Pages/Public/Home.aspx">Home</a>
+                <a href="../Pages/Public/Projects.aspx">Projects</a>
+                <a href="../Pages/Public/Services.aspx">Services</a>
+                <a href="../Pages/Public/About.aspx">About</a>
+                <a href="../Pages/Public/Contact.aspx">Contact</a>
+            </div>
+        </div>
+
+        <!-- Content Placeholder -->
+        <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2025 Aesthetica Interiors. All rights reserved.</p>
+        </footer>
+    </form>
+</body>
+</html>
